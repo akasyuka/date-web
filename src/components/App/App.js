@@ -1,7 +1,7 @@
 import React from "react";
-import Info from "./components/info";
-import Form from "./components/form";
-import Weather from "./components/weather";
+import Info from "../info";
+import Form from "../form";
+import Weather from "../weather";
 
 const API_KEY = "b8700f10b203b79cff3a2237de1ed4f2";
 
@@ -54,7 +54,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="wrapper">
         <Info />
         <Form weatherMethod={this.gettingWeather}/>
         <Weather 
