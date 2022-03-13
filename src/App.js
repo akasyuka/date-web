@@ -35,7 +35,18 @@ class App extends React.Component {
           country: data.sys.country,
           sunrise: data.sys.sunrise,
           sunset: data.sys.sunset,
-          error: ""
+          error: undefined
+        }
+      )
+    } else {
+      this.setState(
+        {
+          temp: undefined,
+          city: undefined,
+          country: undefined,
+          sunrise: undefined,
+          sunset: undefined,
+          error: "Введите название города"
         }
       )
     };
