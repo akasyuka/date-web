@@ -5,9 +5,11 @@ class Info extends React.Component {
         return (
             <div>
                 <div>Погодное приложение</div>
+                <div>dasdad</div>
             </div>
         );
     }
 }
+
 
 export default Info;
