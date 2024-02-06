@@ -69,6 +69,7 @@ const Main = () => {
   return (
     <div style={containerStyle}>
       <img alt="Remy Sharp" src="/images/cat.jpg" style={imageStyle}/>
+      
       <Typography variant="h6" color="black">
       Давай знакомиться
     </Typography>
