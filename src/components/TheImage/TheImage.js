@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-
+import './TheImage.css';
 
 const TheImage = () => {
 
   return (
     <div>
-      <img alt="Remy Sharp" src="/images/cat.jpg"/>
+      <img class="size"alt="Remy Sharp" src="/images/cat.svg"/>
     </div>
   );
 };

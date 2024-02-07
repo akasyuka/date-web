@@ -20,20 +20,20 @@ class Ask extends Component {
     };
 
     p.setup = () => {
-      p.createCanvas(700, 70);
+      p.createCanvas(350, 70);
       p.textAlign(p.CENTER, p.CENTER);
       p.strokeWeight(1);
-      pts3 = needle.textToPoints("Пойдешь на свидание?", 0, 0, 58, {
-        sampleFactor: 0.1984,
+      pts3 = needle.textToPoints("СВИДАНИЕ?", 0, 0, 50, {
+        sampleFactor: 0.2,
       });
     };
 
     p.draw = () => {
       p.background(255);
-      const d = p.sin(p.frameCount / 50) * 2;
+      const d = p.sin(p.frameCount / 50) * 1;
       const angle = p.frameCount / 100;
       p.push();
-      p.stroke(0, 0, 255);
+      p.stroke(25, 117, 209);
       p.translate(30, p.height - 10);
       for (let i = 0; i < pts3.length; i++) {
         p.push();
