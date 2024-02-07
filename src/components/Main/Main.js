@@ -1,19 +1,10 @@
 import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
 import Alert from '@mui/material/Alert';
-import Typography from '@mui/material/Typography';
 import React, { useState } from "react";
+import './Main.css';
 
-const containerStyle = {
-  display: 'flex',
-  flexDirection: 'column',
-  alignItems: 'center',
-  alignContent: 'center',
-  height: '90vh',
-  width: '50vw',
-  margin: '0 auto',
-  justifyContent: 'space-between',
-};
+
 
 const imageStyle = {
     marginTop: '5vh',
@@ -67,12 +58,7 @@ const Main = () => {
   };
 
   return (
-    <div style={containerStyle}>
-      <img alt="Remy Sharp" src="/images/cat.jpg" style={imageStyle}/>
-      
-      <Typography variant="h6" color="black">
-      Давай знакомиться
-    </Typography>
+    <div class="containerStyle">
       {textFieldVisible && (
         <TextField
           name="name"
