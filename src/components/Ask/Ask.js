@@ -33,7 +33,7 @@ class Ask extends Component {
       const d = p.sin(p.frameCount / 50) * 1;
       const angle = p.frameCount / 100;
       p.push();
-      p.stroke(25, 117, 209);
+      p.stroke(72, 9, 173);
       p.translate(30, p.height - 10);
       for (let i = 0; i < pts3.length; i++) {
         p.push();
